@@ -2,122 +2,280 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pendela Vyshnavi | AI Product Builder</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
+      margin: 0; padding: 0;
       font-family: 'Inter', sans-serif;
       background-color: #f9f9f9;
       color: #1a1a1a;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
-      padding: 2rem;
+      background: #fff;
+      padding: 2rem 1rem;
       text-align: center;
-      background: #ffffff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     header h1 {
-      font-size: 2.5rem;
       margin: 0;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #0073e6;
     }
     header p {
+      margin: 0.4rem 0 1rem;
+      font-weight: 600;
       font-size: 1.2rem;
-      color: #666;
+      color: #444;
     }
     .cta-buttons a {
-      margin: 0.5rem;
-      padding: 0.6rem 1.2rem;
-      text-decoration: none;
+      display: inline-block;
+      margin: 0.4rem 0.6rem;
+      padding: 0.6rem 1.4rem;
       border-radius: 5px;
       background-color: #0073e6;
       color: white;
-      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .cta-buttons a:hover {
+      background-color: #005bb5;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
     }
     section {
-      padding: 3rem 1rem;
-      max-width: 960px;
-      margin: auto;
+      margin-bottom: 3.5rem;
     }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+    section h2 {
+      font-size: 2rem;
       color: #0073e6;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #0073e6;
+      padding-bottom: 0.3rem;
+      font-weight: 700;
     }
     .card {
       background: white;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 1.8rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+      margin-bottom: 1.8rem;
+    }
+    .card p {
+      margin: 0.6rem 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .highlight-list {
+      list-style: none;
+      padding-left: 1rem;
+      margin: 0.5rem 0 0 0;
+      color: #444;
+      font-weight: 600;
+    }
+    .highlight-list li {
+      margin-bottom: 0.4rem;
+      position: relative;
+      padding-left: 1.3rem;
+    }
+    .highlight-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #0073e6;
+      font-weight: 900;
+    }
+    .projects p, .certifications p {
+      margin: 0.3rem 0;
+      font-weight: 500;
+    }
+    .tag {
+      display: inline-block;
+      background: #0073e6;
+      color: white;
+      border-radius: 15px;
+      padding: 0.15rem 0.8rem;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+      margin-top: 0.4rem;
+      font-weight: 600;
+    }
+    a.inline-link {
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.inline-link:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem 1rem;
       font-size: 0.9rem;
-      background: #fafafa;
-      color: #777;
+      color: #666;
+      border-top: 1px solid #ddd;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Pendela Vyshnavi</h1>
-    <p>Building lovable AI experiences — One product at a time</p>
+    <p>Building lovable AI experiences — One product at a time.</p>
     <div class="cta-buttons">
-      <a href="resume.pdf" target="_blank">📄 Resume</a>
-      <a href="https://linkedin.com/in/pendelavyshnavi" target="_blank">LinkedIn</a>
-      <a href="https://github.com/vyshnavipendela" target="_blank">GitHub</a>
+      <a href="resume.pdf" target="_blank" rel="noopener">📄 Download Resume</a>
+      <a href="#contact" rel="noopener">🤝 Let’s Connect</a>
+      <a href="#projects" rel="noopener">🚀 View Projects</a>
     </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I’m a final-year Computer Science student passionate about bridging the gap between AI and user experience. I specialize in AI product thinking, Python development, and data storytelling. Currently building <strong>Vidyabot</strong>, a voice AI tutor to support students in India.</p>
-    </div>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I'm a final-year Computer Science student passionate about bridging the gap between AI and user experience. I specialize in AI product thinking, Python development, and data storytelling. Currently building <strong>Vidyabot</strong>, a voice AI tutor to support students in India.</p>
+        <ul class="highlight-list">
+          <li>🎓 BTech in Computer Science</li>
+          <li>🤖 Building Vidyabot – Voice AI Tutor</li>
+          <li>📊 Data Projects with Tableau & Power BI</li>
+          <li>🌱 Learning AI Product Management & Ethical AI</li>
+          <li>🚀 Hackathon Participant | T-Hub Aspirant</li>
+        </ul>
+      </div>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="card">
-      <p><strong>Languages:</strong> Python, JavaScript, HTML/CSS</p>
-      <p><strong>Libraries:</strong> Pandas, Matplotlib, Seaborn, Plotly, HuggingFace, OpenCV</p>
-      <p><strong>Tools:</strong> Power BI, Tableau, Figma, Git, Notion, Streamlit</p>
-      <p><strong>Domains:</strong> AI Product Management, Data Visualization, UX Design</p>
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <p><strong>Languages:</strong> Python, HTML/CSS, JavaScript</p>
+        <p><strong>Frameworks:</strong> Flask, Streamlit</p>
+        <p><strong>Libraries:</strong> Pandas, Matplotlib, Seaborn, Plotly, HuggingFace, OpenCV</p>
+        <p><strong>Tools:</strong> Power BI, Tableau, Figma, VS Code, Git, Notion</p>
+        <p><strong>Product/UX:</strong> Figma, Notion, User Flows, Wireframes</p>
+        <p><strong>Domains:</strong> AI Product Management, Data Visualization, Chatbots, UX Design</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <p><strong>Vidyabot:</strong> Voice AI tutor chatbot for academic support and exam stress relief.</p>
-      <p><strong>Retail Sales Insights:</strong> Power BI dashboard for CEO/CMO decision-making.</p>
-      <p><strong>Agricultural Productivity Dashboard:</strong> Tableau project analyzing crop trends in India.</p>
-      <p><strong>Python CLI Tool:</strong> Data manipulation app using Click + Pandas + Argparse.</p>
-      <p><strong>Spotify Mood UX Redesign:</strong> Case study with mood-based user journey.</p>
-    </div>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card projects">
+        <p><strong>🎙️ Vidyabot – Voice AI EdTech Assistant</strong><br />
+        Python, HuggingFace, TTS<br />
+        Voice-enabled chatbot for student Q&A and exam stress support.<br />
+        <span class="tag">AI</span><span class="tag">VoiceBot</span><span class="tag">EdTech</span></p>
 
-  <section>
-    <h2>Certifications</h2>
-    <div class="card">
-      <p><strong>Forage:</strong> Deloitte (Data Analytics), AWS (Solutions Architect), Goldman Sachs, Tata, Walmart</p>
-      <p><strong>Coursera:</strong> AI Product Management (Duke), Python for Everybody (UMich), Tableau, Power BI</p>
-      <p><strong>Google Cloud:</strong> Intro to Generative AI</p>
-    </div>
-  </section>
+        <p><strong>📊 Agricultural Productivity Dashboard</strong><br />
+        Tableau<br />
+        Storyline-based dashboard analyzing state-wise agricultural productivity across India.<br />
+        <span class="tag">DataViz</span><span class="tag">Policy</span><span class="tag">Agriculture</span></p>
 
-  <section>
-    <h2>Contact Me</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:vyshnavipendela7@gmail.com">vyshnavipendela7@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/pendelavyshnavi" target="_blank">/pendelavyshnavi</a></p>
-      <p>GitHub: <a href="https://github.com/vyshnavipendela" target="_blank">@vyshnavipendela</a></p>
-    </div>
-  </section>
+        <p><strong>📈 Retail Sales Insights</strong><br />
+        Power BI<br />
+        CEO/CMO-targeted dashboards using sales and region-level retail data.<br />
+        <span class="tag">BusinessIntelligence</span><span class="tag">RetailAnalytics</span></p>
+
+        <p><strong>🚗 License Plate Recognition</strong><br />
+        Python, OpenCV, OCR<br />
+        Smart vehicle tracking through image-based license extraction.<br />
+        <span class="tag">ComputerVision</span><span class="tag">SmartCity</span></p>
+
+        <p><strong>💬 AI Healthcare Chatbot</strong><br />
+        Python, NLP<br />
+        Conversational agent for symptom-based health queries using rule-based + NLP.<br />
+        <span class="tag">HealthAI</span><span class="tag">NLP</span></p>
+
+        <p><strong>⚙️ Python CLI Application</strong><br />
+        Pandas, Click, Argparse<br />
+        CLI tool for data manipulation using flexible commands and flags.<br />
+        <span class="tag">CLI</span><span class="tag">DataEngineering</span></p>
+
+        <p><strong>📊 Data Visualization Tool</strong><br />
+        Matplotlib, Seaborn, Plotly<br />
+        Automated interactive chart creation from CSV/Excel datasets.<br />
+        <span class="tag">EDA</span><span class="tag">Storytelling</span><span class="tag">PythonTools</span></p>
+
+        <p><strong>🎧 Spotify Mood-Based Redesign (UX Case Study)</strong><br />
+        Figma, UX Research<br />
+        Redesigned flow to suggest music based on mood states; proposed integration with mood sensors.<br />
+        <span class="tag">UXDesign</span><span class="tag">CaseStudy</span><span class="tag">Spotify</span></p>
+
+        <p><strong>🍽️ Zomato App Redesign</strong><br />
+        Figma<br />
+        Improved search flow, added dietary filters, redesigned personalized homepage.<br />
+        <span class="tag">UX</span><span class="tag">MobileProduct</span><span class="tag">Zomato</span></p>
+
+        <p><strong>📱 Weather CLI App</strong><br />
+        Python, OpenWeather API<br />
+        Real-time weather fetch app via terminal commands.<br />
+        <span class="tag">MiniProject</span><span class="tag">API</span></p>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications & Virtual Internships</h2>
+      <div class="card certifications">
+        <p><strong>🧩 NSW Government – Marketing & Communication Job Simulation</strong><br />
+        Forage | May 2025<br />
+        Planned campaigns and improved communication strategy.</p>
+
+        <p><strong>📊 Tata – Data Visualization</strong><br />
+        Forage<br />
+        Presented insights using business dashboards and analytics tools.</p>
+
+        <p><strong>☁️ AWS APAC – Solutions Architecture Program</strong><br />
+        Forage | Apr 2025<br />
+        Designed cloud-based architecture with AWS services for clients.</p>
+
+        <p><strong>📈 SAP Analytics Cloud</strong><br />
+        Project-Based Experience<br />
+        Hands-on BI dashboard creation and scenario forecasting.</p>
+
+        <p><strong>📉 Deloitte Australia – Data Analytics Virtual Internship</strong><br />
+        Forage<br />
+        Client data cleaning, dashboarding, and presentation simulations.</p>
+
+        <p><strong>💻 Goldman Sachs – Software Engineering Program</strong><br />
+        Forage<br />
+        Debugged and improved systems for a banking simulation.</p>
+
+        <p><strong>🏦 Wells Fargo – Software Engineering Simulation</strong><br />
+        Forage<br />
+        Solved real-world backend and security-based problems.</p>
+
+        <p><strong>🛒 Walmart – Advanced Software Engineering</strong><br />
+        Forage<br />
+        Tackled scalable backend challenges in e-commerce apps.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <p>“Let’s build lovable AI, solve real problems, or just connect and learn together!”</p>
+        <p>📧 Email: <a href="mailto:vyshnavipendela7@gmail.com" class="inline-link">vyshnavipendela7@gmail.com</a></p>
+        <p>🔗 LinkedIn: <a href="https://linkedin.com/in/pendelavyshnavi" target="_blank" rel="noopener" class="inline-link">linkedin.com/in/pendelavyshnavi</a></p>
+        <p>💻 GitHub: <a href="https://github.com/vyshnavipendela" target="_blank" rel="noopener" class="inline-link">github.com/vyshnavipendela</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>Made with 💛 by Vyshnavi | Powered by GitHub Pages</p>
