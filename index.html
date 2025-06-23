@@ -2,104 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pendela Vyshnavi | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendela Vyshnavi | AI Product Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .cta-buttons a {
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #0073e6;
+      color: white;
+      display: inline-block;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #0073e6;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #fafafa;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Pendela Vyshnavi</h1>
-    <p>Product Manager|Python Developer | Data Analyst</p>
-    <button onclick="toggleTheme()">Toggle Theme</button>
+    <p>Building lovable AI experiences — One product at a time</p>
+    <div class="cta-buttons">
+      <a href="resume.pdf" target="_blank">📄 Resume</a>
+      <a href="https://linkedin.com/in/pendelavyshnavi" target="_blank">LinkedIn</a>
+      <a href="https://github.com/vyshnavipendela" target="_blank">GitHub</a>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-    <a href="#certifications">Certificates</a>
-    <a href="spotify-case-study.html">Spotify Case Study</a>
-  </nav>
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I’m a final-year Computer Science student passionate about bridging the gap between AI and user experience. I specialize in AI product thinking, Python development, and data storytelling. Currently building <strong>Vidyabot</strong>, a voice AI tutor to support students in India.</p>
+    </div>
+  </section>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm currently pursuing B.Tech in Computer Science & Engineering. I aspire to work as a software engineer and have a strong passion for analyzing data and building dashboards using tools like Power BI and Python.
-      </p>
-    </section>
+  <section>
+    <h2>Skills</h2>
+    <div class="card">
+      <p><strong>Languages:</strong> Python, JavaScript, HTML/CSS</p>
+      <p><strong>Libraries:</strong> Pandas, Matplotlib, Seaborn, Plotly, HuggingFace, OpenCV</p>
+      <p><strong>Tools:</strong> Power BI, Tableau, Figma, Git, Notion, Streamlit</p>
+      <p><strong>Domains:</strong> AI Product Management, Data Visualization, UX Design</p>
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, SQL, C (basic)</li>
-        <li>NLTK, NumPy, Pandas, Matplotlib, Seaborn, Streamlit, Click, Argparse</li>
-        <li>Power BI, Git, Excel, SAP Cloud Platform, SAP Analytics Cloud, Azure</li>
-        <li>OOP, Data Structures, Algorithms, Agile, API Integration, NLP, Dashboard Design</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <p><strong>Vidyabot:</strong> Voice AI tutor chatbot for academic support and exam stress relief.</p>
+      <p><strong>Retail Sales Insights:</strong> Power BI dashboard for CEO/CMO decision-making.</p>
+      <p><strong>Agricultural Productivity Dashboard:</strong> Tableau project analyzing crop trends in India.</p>
+      <p><strong>Python CLI Tool:</strong> Data manipulation app using Click + Pandas + Argparse.</p>
+      <p><strong>Spotify Mood UX Redesign:</strong> Case study with mood-based user journey.</p>
+    </div>
+  </section>
 
-    <section id="certifications">
-      <h2>📜 Certifications</h2>
-      <ul>
-        <li><a href="Deloitte certificate _page-0001.jpg" target="_blank">Deloitte – Data Analytics Virtual Internship (Forage)</a></li>
-        <li><a href="Gold Sachs_page-0001.jpg" target="_blank">Goldman Sachs – Software Engineering Program (Mar 2025)</a></li>
-        <li><a href="microsoft certificate_page-0001.jpg" target="_blank">Microsoft – AI Healthcare Chatbot</a></li>
-        <li><a href="nativesoft certificate_page-0001.jpg" target="_blank">NativeSoft – Internship Experience</a></li>
-        <li><a href="Pendela Vyshnavi_AICTE_Certificate_page-0001.jpg" target="_blank">AICTE Internship</a></li>
-        <li><a href="Tata - Data visualization_page-0001.jpg" target="_blank">Tata – Data Visualisation Job Simulation</a></li>
-        <li><a href="tata-cybersecurity_page-0001.jpg" target="_blank">Tata – Cybersecurity Analyst (Apr 2025)</a></li>
-        <li><a href="walmart certificate_page-0001.jpg" target="_blank">Walmart – Advanced Software Engineering (Apr 2025)</a></li>
-        <li><a href="wellsforgo_page-0001.jpg" target="_blank">Wells Fargo – Software Engineering Simulation (Mar 2025)</a></li>
-        <li><a href="amazon certificate_page-0001.jpg" target="_blank">AWS APAC – Solutions Architecture (Apr 2025)</a></li>
-      </ul>
-    </section>
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
+      <p><strong>Forage:</strong> Deloitte (Data Analytics), AWS (Solutions Architect), Goldman Sachs, Tata, Walmart</p>
+      <p><strong>Coursera:</strong> AI Product Management (Duke), Python for Everybody (UMich), Tableau, Power BI</p>
+      <p><strong>Google Cloud:</strong> Intro to Generative AI</p>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <article>
-        <h3>Agricultural Productivity – Power BI</h3>
-        <p>Analyzed agricultural productivity trends across Indian states using Power BI. Developed dashboards with DAX, slicers, maps, and charts.</p>
-        <a href="https://github.com/Vyshnavi12548/Agriculture-data-project" target="_blank">🔗 View Project</a>
-      </article>
-
-      <article>
-        <h3>AI Chatbot – Edunet Foundation</h3>
-        <p>Collaborated on backend logic, intent classification, and cloud deployment of an AI chatbot using Python.</p>
-        <a href="https://github.com/Vyshnavi12548/ai-chatbot" target="_blank">🔗 View Project</a>
-      </article>
-
-      <article>
-        <h3>Data Tools & CLI – Native Soft</h3>
-        <p>Developed Python-based CLI tools for data visualization, and used Git for team collaboration.</p>
-        <a href="https://github.com/Vyshnavi12548/Data-visualization" target="_blank">🔗 View Project</a>
-      </article>
-    </section>
-
-    <section id="resume">
-      <h2>Resume</h2>
-      <a href="Pendela Vyshnavi.pdf" download>📄 Download My Resume</a>
-      <a href="Pendela_vyshnavi-resume.pdf" download>📄 Python Developer Resume</a>
-      <a href="Resume_pendela vyshnavi.pdf" download>📄 Product Manager Resume</a>
-      <a href="Vyshnavi_pendela-resume.pdf" download>📄 Data Analyst Resume/a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>📧 Email: <a href="mailto:vyshnavipendela7@gmail.com">vyshnavipendela7@gmail.com</a></p>
-      <p>💻 GitHub: <a href="https://github.com/Vyshnavi12548" target="_blank">Vyshnavi12548</a></p>
-      <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/vyshnavi-pendelab8a007328" target="_blank">vyshnavi-pendelab8a007328</a></p>
-    </section>
-  </main>
+  <section>
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:vyshnavipendela7@gmail.com">vyshnavipendela7@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/pendelavyshnavi" target="_blank">/pendelavyshnavi</a></p>
+      <p>GitHub: <a href="https://github.com/vyshnavipendela" target="_blank">@vyshnavipendela</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Pendela Vyshnavi</p>
+    <p>Made with 💛 by Vyshnavi | Powered by GitHub Pages</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
